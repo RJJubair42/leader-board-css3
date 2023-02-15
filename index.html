@@ -1,13 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome-->
+    <script src="https://kit.fontawesome.com/f17fe590ba.js" crossorigin="anonymous"></script>
+    <!-- Favicons Links -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/logo/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/logo/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/logo/logo.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Styles Links -->
+    <link rel="stylesheet" href="css/style.css" />
     <title>Leader Board</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Header Starts -->
+    <header class="header">
+      <nav class="navbar">
+        <ul class="idea">
+          <li><a href="#"><img src="./images/icons/logo.png" alt=""></a></li>
+          <li><a href="#">Idea</a></li>
+        </ul>
+        <ul class="contact">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#"><img src="./images/icons/profile.png" alt=""></a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Ends -->
+    <!-- Top players and Top Blogs Starts -->
+    <main>
+      <section class="container">
+        <!-- Top Players Starts -->
+        <div class="top-players">
+          <h2 class="section-title">Top Players</h2>
+          <div class="players">
+            <div class="player">
+              <img src="./images/players/player-1.png" alt="" />
+              <h3 class="player-name">John Smith</h3>
+            </div>
+            <div class="player">
+              <img src="./images/players/player-2.png" alt="" />
+              <h3 class="player-name">Pro Rasel</h3>
+            </div>
+            <div class="player">
+              <img src="./images/players/player-3.png" alt="" />
+              <h3 class="player-name">Abu Sufian</h3>
+            </div>
+            <div class="player">
+              <img src="./images/players/player-4.png" alt="" />
+              <h3 class="player-name">Shajedul Karim</h3>
+            </div>
+            <div class="player">
+              <img src="./images/players/player-5.png" alt="" />
+              <h3 class="player-name">Maruf Ahmed</h3>
+            </div>
+            <div class="player">
+              <img src="./images/players/player-6.png" alt="" />
+              <h3 class="player-name">Mujahid</h3>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- Top Players Ends -->
+        <!-- Top Blogs Starts -->
+        <div class="top-blogs">
+          <h2 class="section-title">Top Blogs</h2>
+          <div class="blogs">
+            <article class="blog">
+              <div class="thumbnail">
+                <img src="./images/blogs/blog-1.png" alt="Blog" />
+              </div>
+              <div class="blog-info">
+                <h3 class="blog-title">
+                  13 of My Favorite <br />
+                  UI/UX Goodies
+                </h3>
+                <p class="blog-author">BY <a href="#">Danny Sapio</a></p>
+              </div>
+            </article>
+            <article class="blog">
+              <div class="thumbnail">
+                <img src="./images/blogs/blog-2.png" alt="Blog" />
+              </div>
+              <div class="blog-info">
+                <h3 class="blog-title">
+                  UI cheat sheet: <br />
+                  list vs grids
+                </h3>
+                <p class="blog-author">BY <a href="#">Tess Gadd</a></p>
+              </div>
+            </article>
+            <article class="blog">
+              <div class="thumbnail">
+                <img src="./images/blogs/blog-3.png" alt="Blog" />
+              </div>
+              <div class="blog-info">
+                <h3 class="blog-title">
+                  7 typography tips <br />
+                  for interface design
+                </h3>
+                <p class="blog-author">BY <a href="#">Jeremiah Lam</a></p>
+              </div>
+            </article>
+            <article class="blog">
+              <div class="thumbnail">
+                <img src="./images/blogs/blog-4.png" alt="Blog" />
+              </div>
+              <div class="blog-info">
+                <h3 class="blog-title">
+                  Your logo is <br />
+                  copied
+                </h3>
+                <p class="blog-author">BY <a href="#">Ferdinand Vogler</a></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Top Blogs Ends -->
+      <!-- Latest Courses Starts -->
+      <section class="container">
+        <h2 class="section-title">Latest Courses</h2>
+        <div class="courses">
+            <div class="course">
+                <div class="course-banner">
+                    <img src="./images/courses/course-1.png" alt="Course">
+                </div>
+                <div class="course-detals">
+                    <h3 class="course-title">React - The Complete <br> Guide 2020</h3>
+                    <p class="course-author"><a href="#">Reed Krakoff.</a></p>
+                    <div class="course-info">
+                        <div>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star empty"></i>
+                            <span class="rating">4.5</span>
+                        </div>
+                        <div class="course-duration"><i class="fa-sharp fa-regular fa-clock"></i> 1:30hr</div>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course-banner">
+                    <img src="./images/courses/course-2.png" alt="Course">
+                </div>
+                <div class="course-detals">
+                    <h3 class="course-title">Powerpoint 2020 <br> Master Powerpoint Cour</h3>
+                    <p class="course-author"><a href="#">Reed Krakoff.</a></p>
+                    <div class="course-info">
+                        <div>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star empty"></i>
+                            <span class="rating">4.3</span>
+                        </div>
+                        <div class="course-duration"><i class="fa-sharp fa-regular fa-clock"></i> 1:30hr</div>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course-banner">
+                    <img src="./images/courses/course-3.png" alt="Course">
+                </div>
+                <div class="course-detals">
+                    <h3 class="course-title">The Complete JavaScript <br>Course 2020</h3>
+                    <p class="course-author"><a href="#">Reed Krakoff.</a></p>
+                    <div class="course-info">
+                        <div>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star filled"></i>
+                            <i class="fa-solid fa-star empty"></i>
+                            <span class="rating">4.5</span>
+                        </div>
+                     
+                        <div class="course-duration"><i class="fa-sharp fa-regular fa-clock"></i> 1:30hr</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Latest Courses Ends -->
+    </main>
+    <!-- Top players and Top Blogs Ends -->
+  </body>
 </html>

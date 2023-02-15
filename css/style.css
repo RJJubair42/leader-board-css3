@@ -1,5 +1,228 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* Common Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 870px;
+  padding: 30px;
+  margin-top: 21px;
+}
+.section-title {
+  font-size: 24px;
+  color: #562eff;
+  margin-top: 3px;
+}
+/* Header Starts */
+.header {
+  background-color: #562eff;
+  margin-bottom: 36px;
+}
+.header a {
+  color: #ffffff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.idea img {
+  width: 40.42px;
+  height: 51px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact a {
+  margin-right: 30px;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar li a {
+  text-decoration: none;
+}
+.idea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.idea a {
+  padding-left: 15px;
+}
+/* Header Ends */
+/* Top players and Top Blogs Starts */
+
+/* Top Player Styles  */
+.top-players {
+  margin-bottom: 30px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
+  color: #000000;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 30px;
+}
+/* Top Blogs Styles */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.blog {
+  display: flex;
+}
+.blog .thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.blog-info {
+  margin-left: 16px;
+}
+.blog-title {
+  font-size: 20px;
+  color: #000000;
+}
+.blog-author {
+  font-size: 16px;
+  color: #9f9f9f;
+}
+.blog-author a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #562eff;
+}
+/* Top players and Top Blogs Ends  */
+/* Latest Courses Styles starts */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 23px;
+}
+.course .course-banner img {
+  width: 224px;
+  height: 104px;
+}
+.course-title {
+  font-size: 20px;
+  color: #1e1e1e;
+}
+.course-author a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #ed6b4f;
+}
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-duration {
+  background: #ffe4e8;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ff4a60;
+  padding: 5px;
+}
+
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+  opacity: 0.25;
+}
+.rating {
+  color: #a2a2a2;
+}
+/*---------------------------- 
+Latest Courses Styles Ends 
+------------------------------*/
+/*-----------------------------
+Responsive Devices 
+ ------------------------------*/
+/* ----------------------------
+Mobile Device
+------------------------------- */
+@media only screen and (max-width: 688px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .idea {
+    flex-direction: column;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+  }
+  .section-title,
+  .course {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blog,
+  .course-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px 0 20px;
+  }
 }
